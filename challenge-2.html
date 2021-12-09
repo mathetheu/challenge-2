@@ -1,0 +1,129 @@
+
+<!-- REQUISITOS DE DESAFIOS
+
+    [x] Retirar todas as tags <br> e manter o layout sem alterações visuais
+    [x] Tirar o fieldset e manter o layout sem alterações visuais
+
+      - Ao passar o mouse sobre os botões de Limpar e Enviar Dados:
+    [x] Trocar a cor do fundo
+    [x] Aumentar o Botão
+    [x] Trocar a cor da letra
+    [x] Trocar a cor da borda
+    [x] O cursor terá que ser o da "mãozinha"
+
+    [x] Alterar cores da borda de todos os inputs
+    [x] Alterar a fonte do projeto para 'Nunito'
+    [x] Alterar o Background do Formulario
+    [x] alterar a cor e tamanho dos textos dos labels
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Challenge 2 - HTML</title>
+</head>
+
+<body>
+    <div class="content">
+         <h1 class="title-register">Cadastro</h1>
+
+        <form action="" method="POST" enctype="multipart/form-data">
+
+
+            <label>Nome
+                <input type="text" name="nome" required autofocus>
+            </label>
+
+            <label>Email 
+                <input type="email" name="email" required >
+            </label>
+
+
+            <label>Idade 
+                <input type="number" min="12" step="1" style="width:45px;" required>
+            </label>
+
+            
+
+            <label>Data de nascimento 
+                <input type="date" name="data-nascimento" required>
+            </label>
+
+
+            <label>Onde você possui conta:
+                <div>
+                <label class="input-inline">
+                    <input  type="checkbox" name="instagram">Instagram
+                </label>
+
+                <label class="input-inline">
+                    <input type="checkbox" name="Facebook">Facebook
+                </label>
+
+                <label class="input-inline">
+                    <input type="checkbox" name="youtube">YouTube
+                </label>
+            </div>
+            </label>
+
+
+            <label>Sexo:
+                <div>
+                <label class="input-inline">
+                    <input type="radio" name="genero">Masculino
+                </label>
+                <label class="input-inline">
+                    <input type="radio" name="genero">Feminino
+                </label>
+             </div>
+            </label>
+
+
+            <label>Cor dos olhos
+                <input type="color" name="cor">
+            </label>
+
+
+            <label>Biografia
+                <textarea name="biografia"></textarea>
+            </label>
+
+
+            <label>Foto do perfil
+                <input class="input-block" type="file" name="foto-perfil" accept="image/*">
+            </label>
+
+            <label>Telefone
+                <input input class="input-block" type="tel" name="telefone" autocomplete required>
+            </label>
+
+
+            <label>Link do Perfil do Facebook
+                <input input class="input-block" type="url" name="url">
+            </label>
+
+
+            <label>Senha
+                <input input class="input-block" type="password" name="senha" minlength="6" maxlength="8" required>
+            </label>                   
+            
+
+            
+            <button class="button-clear" type="reset" name="reset">Limpar</button>
+
+            <button class="button-submit" type="submit" name="submit">Enviar Dados</button>
+            
+        </form>
+
+    </div>
+</body>
+</html>
